@@ -1,7 +1,7 @@
 <h1>Tweets#show</h1>
 <p>Find me in app/views/tweets/show.html.erb</p>
 
-<p><span>email: </span><%= @user.email %></p> <!-- 追加 -->
+<p><span>email: </span><%= @user.email %></p> 
 <p><span>ツイート内容: </span><%= @tweet.body %></p>
 
 <%= form_for([@tweet, @comment]) do |f| %>

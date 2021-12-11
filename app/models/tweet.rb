@@ -3,7 +3,6 @@ class Tweet < ApplicationRecord
     has_many :favorites
     has_many :comments
 
-# 追加
     def favorited_by?(user)
         favorites.where(user_id: user.id).exists?
     end

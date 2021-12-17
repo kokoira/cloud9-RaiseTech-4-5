@@ -51,5 +51,6 @@ test:
 production:
   <<: *default
   database: RaiseTech_app_production
-  username: RaiseTech_app
-  password: <%= ENV['RAISETECH_APP_DATABASE_PASSWORD'] %>
+  username: <%= ENV['RAILS_DATABASE_USERNAME'] %>
+  password: <%= ENV['RAILS_DATABASE_PASSWORD'] %>
+  host: <%= ENV['RAILS_DATABASE_HOST'] %>
